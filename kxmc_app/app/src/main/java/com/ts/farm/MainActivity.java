@@ -1,0 +1,202 @@
+package com.ts.farm;
+
+import android.app.Activity;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ProgressBar;
+import android.widget.Toast;
+
+import com.android.volley.Response;
+import com.ts.farm.common.PlayerManager;
+import com.ts.farm.utils.DataHandler;
+import com.ts.farm.utils.RequestPost;
+
+import java.util.Map;
+
+public class MainActivity extends Activity implements PlayerManager.PlayerStateListener, View.OnClickListener {
+    //private String url1 = "rtmp://tsdzkj.com/live/kxmc";
+    //private String url1 = "http://open.ys7.com/openlive/6231fc1ea91d45aeb549984afbf64e38.hd.m3u8";
+    private String url1 = "http://open.ys7.com/openlive/6231fc1ea91d45aeb549984afbf64e38.m3u8";
+    private Button OpenLamp = null;
+    private Button CloseLamp = null;
+    private Button OpenWater = null;
+    private Button CloseWater = null;
+    private PlayerManager player;
+    private RequestPost requestPost = null;
+    private Button freshenView = null;
+    private Button OpenFood = null;
+    private Button CloseFood = null;
+    private Button OpenDoor = null;
+    private Button CloseDoor = null;
+
+    private ProgressBar progressBar = null;
+
+
+    private Response.Listener succeedRespon = new Response.Listener<String>() {
+        @Override
+        public void onResponse(String response) {
+//            Toast.makeText(MainActivity.this, ""+response, Toast.LENGTH_SHORT).show();
+
+        }
+
+    };
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(com.ts.farm.R.layout.activity_main);
+
+        OpenLamp = (Button) findViewById(R.id.OpenLamp);
+        OpenLamp.setOnClickListener(this);
+
+        CloseLamp = (Button) findViewById(R.id.CloseLamp);
+        CloseLamp.setOnClickListener(this);
+
+        OpenWater = (Button) findViewById(R.id.OpenWater);
+        OpenWater.setOnClickListener(this);
+
+        CloseWater = (Button) findViewById(R.id.CloseWater);
+        CloseWater.setOnClickListener(this);
+
+        OpenFood = (Button) findViewById(R.id.OpenFood);
+        OpenFood.setOnClickListener(this);
+
+        CloseFood = (Button) findViewById(R.id.CloseFood);
+        CloseFood.setOnClickListener(this);
+
+        OpenDoor = (Button) findViewById(R.id.OpenDoor);
+        OpenDoor.setOnClickListener(this);
+
+        CloseDoor = (Button) findViewById(R.id.CloseDoor);
+        CloseDoor.setOnClickListener(this);
+
+        freshenView = (Button) findViewById(R.id.freshenView);
+        freshenView.setOnClickListener(this);
+
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+
+        requestPost = new RequestPost(MainActivity.this, succeedRespon);
+
+        initPlayer();
+    }
+
+    private void initPlayer() {
+        player = new PlayerManager(this);
+        player.setFullScreenOnly(false);
+        player.setScaleType(PlayerManager.SCALETYPE_FILLPARENT);
+        player.playInFullScreen(true);
+        player.setPlayerStateListener(this);
+        player.play(url1);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        if (player.gestureDetector.onTouchEvent(event))
+            return true;
+        return super.onTouchEvent(event);
+    }
+
+    @Override
+    public void onComplete() {
+
+    }
+
+    @Override
+    public void onError() {
+    }
+
+    @Override
+    public void onLoading() {
+    }
+
+    @Override
+    public void onPlay() {
+        //进度条结束
+        progressBar.setVisibility(View.INVISIBLE);
+    }
+
+    @Override
+    public void onClick(View view) {
+
+        if (!checkNetworkState()) {
+            Toast.makeText(MainActivity.this, "检查网络是否可用", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        Map localMap = null;
+        String value = "";
+        switch (view.getId()) {
+
+            case R.id.OpenLamp:
+                value = OpenLamp.getTag().toString();
+                break;
+            case R.id.CloseLamp:
+                value = CloseLamp.getTag().toString();
+                break;
+            case R.id.OpenWater:
+                value = OpenWater.getTag().toString();
+                break;
+            case R.id.CloseWater:
+                value = CloseWater.getTag().toString();
+                break;
+            case R.id.OpenFood:
+                value = OpenFood.getTag().toString();
+                break;
+            case R.id.CloseFood:
+                value = CloseFood.getTag().toString();
+                break;
+            case R.id.OpenDoor:
+                value = OpenDoor.getTag().toString();
+                break;
+            case R.id.CloseDoor:
+                value = CloseDoor.getTag().toString();
+                break;
+            case R.id.freshenView:
+                progressBar.setVisibility(View.VISIBLE);
+                player.play(url1);
+                return;
+        }
+
+        localMap = DataHandler.getParameters("/Device/ExecuteCmd");
+        localMap.put("imei", "000000000001001");
+        localMap.put("cmd", value);
+        requestPost.requestPost(localMap);
+    }
+
+    /**
+     * 检测网络是否连接
+     *
+     * @return
+     */
+    private boolean checkNetworkState() {
+        boolean flag = false;
+        //得到网络连接信息
+        ConnectivityManager manager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        //去进行判断网络是否连接
+        if (manager.getActiveNetworkInfo() != null) {
+            flag = manager.getActiveNetworkInfo().isAvailable();
+        }
+
+        return flag;
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (player.isPlaying()) {
+            player.pause();
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (!player.isPlaying()) {
+            player.start();
+        }
+    }
+}

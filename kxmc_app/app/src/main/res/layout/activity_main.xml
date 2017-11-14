@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:gravity="center_horizontal"
+        android:text="PowerFarm"
+        android:textColor="@android:color/white"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/OpenLamp"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="OpenLamp"
+            android:text="开灯" />
+
+        <Button
+            android:id="@+id/CloseLamp"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="CloseLamp"
+            android:text="关灯" />
+
+        <Button
+            android:id="@+id/OpenWater"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1"
+            android:tag="OpenWater"
+            android:text="喂水" />
+
+        <Button
+            android:id="@+id/CloseWater"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1"
+            android:tag="CloseWater"
+            android:text="关闭喂水" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/OpenFood"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1"
+            android:tag="OpenFood"
+            android:text="喂食" />
+
+        <Button
+            android:id="@+id/CloseFood"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1"
+            android:tag="CloseFood"
+            android:text="关闭喂食" />
+
+        <Button
+            android:id="@+id/OpenDoor"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1"
+            android:tag="OpenDoor"
+            android:text="开门"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/CloseDoor"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1"
+            android:tag="CloseDoor"
+            android:text="关门"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/freshenView"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1"
+            android:tag="CloseWater"
+            android:text="刷新" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_margin="10px"
+        android:layout_weight="1"
+        android:background="@android:color/white">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" />
+
+        <com.ts.farm.widget.media.IjkVideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+</LinearLayout>

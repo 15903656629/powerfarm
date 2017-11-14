@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\temp\\IjkPlayer_demo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "D:\\temp\\IjkPlayer_demo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\app\\kxmc_app\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "D:\\app\\kxmc_app\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    }
+]

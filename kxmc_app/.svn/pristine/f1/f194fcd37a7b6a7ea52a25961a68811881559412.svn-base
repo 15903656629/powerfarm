@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\temp\\IjkPlayer_demo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "D:\\temp\\IjkPlayer_demo\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\app\\kxmc_app\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "D:\\app\\kxmc_app\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\app\\kxmc_app\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\logo.png",
+        "source": "D:\\app\\kxmc_app\\app\\src\\main\\res\\mipmap-mdpi\\logo.png"
+    },
+    {
+        "merged": "D:\\temp\\IjkPlayer_demo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\logo.png",
+        "source": "D:\\temp\\IjkPlayer_demo\\app\\src\\main\\res\\mipmap-mdpi\\logo.png"
+    }
+]

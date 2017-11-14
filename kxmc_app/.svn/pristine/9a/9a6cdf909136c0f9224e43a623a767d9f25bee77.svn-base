@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\app\kxmc_app\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_0d76ceca2ad354629228f82685e6bac3468f0020.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\app\kxmc_app\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_7b2145f89c8a2b12aa19a84d4d4c593b682f6674.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\app\kxmc_app\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_c72d05ab88d29985a7c00483de4a7e5fa6ab78d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\app\kxmc_app\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_8d78d293f8d43afcf4c876d85a1ed979641ffc93.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\app\kxmc_app\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_18e2f0c86e3b41010f21b748499703e0bcc81dd0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\app\kxmc_app\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_e888c5a66ed50e630e0086d7b8990322d3c30ce0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\app\kxmc_app\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_ea38212ba69a0499d2fb420123b96dc67ce2ac1d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\eu.the4thfloor.volley\com.android.volley\2015.05.28\b0b08cc0ac897e596abe6b263a9507cba875b705\com.android.volley-2015.05.28.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b0b08cc0ac897e596abe6b263a9507cba875b705">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\com.android.volley-2015.05.28_c6370b5044be90158f474fc6fb3579fca2216951.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\app\kxmc_app\app\build\intermediates\exploded-aar\ijkplayer-java-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fa1103fa4d3f51d40f68afbf48ade55630b05347">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\intermediates-exploded-aar-ijkplayer-java-release_6237212c9a153a2a3cbca1602f58d8ab0cdb7576.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\app\kxmc_app\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_bb15be29b46a915a365db3084e9c80ab49ca71a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\app\kxmc_app\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_899faaa95f2a8c5c5af8e522d46e4dad65d8105a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\app\kxmc_app\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_31f2200ea2e3818d7660a48f6c2f412f7abb641a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\androidstudiol\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_481785bb46711bb3fc36da610612276bcba0db48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\app\kxmc_app\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_23183257382424d11825844342754502d0f5484b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\app\kxmc_app\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_eb6c4acf3a0673b0e02043dbc738ab3bd3baf1d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\app\kxmc_app\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_d5fda5b2fa46ea45328218b8b5269bfe7ebb2853.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\app\kxmc_app\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_6902754f66a82e1fcc91874074d8329776b539e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.json\org.json\chargebee-1.0\8b3f1c9d4af9140a570002657c6595f8fe21ba56\org.json-chargebee-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8b3f1c9d4af9140a570002657c6595f8fe21ba56">
+        <dex dex="D:\app\kxmc_app\app\build\intermediates\pre-dexed\debug\org.json-chargebee-1.0_480c47ed57f2ee7fa3eef642c1ae5f1febcf8928.jar" />
+    </item>
+
+</items>
